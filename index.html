@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint"
+          
+    
+    <title>Build a Survey Form using HTML & CSS</title> 
+    
+    <style>
+        /* styling the body element (color, font, Alignment) */
+
+        body{background: linear-gradient(135deg, #153677, #4e085f);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+         /* styling the form (color, padding, shadow)*/
+
+        form{background-color: #ff5945;
+             max-width: 500px;
+             margin: 50px auto;
+             padding: 30px 20px;
+             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+             }
+
+        /* styling the form-control class*/
+
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* styling the form-control Label*/
+        .form-control{
+            display: block;
+            margin-bottom: 10px;
+            
+        }
+
+         /* styling the form-control input. select. textarea*/
+
+         .form-control input,
+         .form-control select,
+         .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+         }
+
+         /* styling the form-control Radio button and checkbox */
+
+         .form-control input [type="radio"]
+         .form-control input [type="checkbox"] {
+            display: inline-block;
+            width: auto;
+         }
+
+         /* styling Button */
+
+         button {
+            background: linear-gradient(135deg, #153677, #4e085f);
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            cursor: pointer;
+             }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+
+    <!--Create form-->
+
+    <form id="form">
+        <!--details-->
+        <div class="form-control">
+            <label for="name" id="lable-name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your Name">
+        </div>
+
+        <div class="form-control">
+            <label for="Email" id="lable-email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="lable-age">Age:</label>
+            <input type="text" id="age" placeholder="Enter your age">
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="lable-role">Which option describe you best?</label>
+        <!--Dropdown Option-->
+        <select name="role" id="role">
+            <option value="Student">Student</option>
+            <option value="inter">Intern</option>
+            <option value="professional">professional</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+
+        <div class="form-control">
+            <label>Would you recommand this course to a friend?</label>
+            <!--Input type radio button-->
+            <label for="recommand-1">
+                <input type="radio" id="recommand-1" name="recommand">Yes</input>
+            </label>
+
+            <label for="recommand-2">
+                <input type="radio" id="recommand-2" name="recommand">No</input>
+            </label>
+
+            <label for="recommand-3">
+                <input type="radio" id="recommand-3" name="recommand">Maybe</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Language and Framework Known</label>
+            <!--input type checkbox-->
+            <label for="inp-1">
+                <input type="Checkbox" name="inp">C</input>
+            </label>
+
+            <label for="inp-2">
+                <input type="Checkbox" name="inp">C++</input>
+            </label>
+
+            <label for="inp-3">
+                <input type="Checkbox" name="inp">Java</input>
+            </label>
+
+            <label for="inp-4">
+                <input type="Checkbox" name="inp">JavaScript</input>
+            </label>
+
+            <label for="inp-5">
+                <input type="Checkbox" name="inp">Python</input>
+            </label>
+            
+        </div>
+
+        <div class="form-control">
+
+            <label for="comment">Any comment or Suggestions</label>
+
+            <!--multi-line text input control-->
+
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+
+            <!--multi-line text input control-->
+
+            <button type="submit" value="submit">Submit</button>
+
+
+
+    </form>
+  
+
+
+
+</body>
+
+</html>
